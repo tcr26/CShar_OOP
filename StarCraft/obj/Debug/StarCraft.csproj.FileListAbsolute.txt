@@ -1,0 +1,6 @@
+D:\WEB\Junk\OOPTasks\StarCraft\bin\Debug\StarCraft.exe.config
+D:\WEB\Junk\OOPTasks\StarCraft\bin\Debug\StarCraft.exe
+D:\WEB\Junk\OOPTasks\StarCraft\bin\Debug\StarCraft.pdb
+D:\WEB\Junk\OOPTasks\StarCraft\obj\Debug\StarCraft.csprojResolveAssemblyReference.cache
+D:\WEB\Junk\OOPTasks\StarCraft\obj\Debug\StarCraft.exe
+D:\WEB\Junk\OOPTasks\StarCraft\obj\Debug\StarCraft.pdb
