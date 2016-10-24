@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace StarCraft.Structures.Protoss.Advanced
 {
-    public class Stargate : ProtossBaseObject
+    public class Stargate
     {
         public Stargate()
-            : base("Stargate", 400, 1, 70, 400)
         {
 
         }

@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace StarCraft.Structures.Protoss.Advanced
 {
-    public class FleetBeacon : ProtossBaseObject
+    public class FleetBeacon
     {
         public FleetBeacon()
-            : base("Fleet Beacon", 400, 1, 70, 400)
         {
 
         }

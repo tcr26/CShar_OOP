@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace StarCraft.Structures.Protoss.Basic
 {
-    public class PhotonCannon : ProtossBaseObject
+    public class PhotonCannon
     {
         public PhotonCannon()
-            : base("Photon Cannon", 400, 1, 45, 400)
         {
 
         }

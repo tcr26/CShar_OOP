@@ -6,7 +6,7 @@ namespace StarCraft.Units
     public class Marine : BaseUnitAdvanced
     {
         public Marine()
-            : base(5, 6, 1, 0, "Marine", 0, 0, 20, 0, "Private", 1)
+            : base(5, 1, 1, 0, "Marine", 45, 0, 20, 0, "Private", 1)
         {
         }
         public void UseStimPack()

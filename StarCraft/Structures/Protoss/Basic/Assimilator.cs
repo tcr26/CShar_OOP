@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace StarCraft.Structures.Protoss.Basic
 {
-    public class Assimilator : ProtossBaseObject
+    public class Assimilator
     {
         public Assimilator()
-            : base("Assimilator", 200, 1, 30, 200)
         {
 
         }

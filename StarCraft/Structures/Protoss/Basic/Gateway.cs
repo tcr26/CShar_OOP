@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace StarCraft.Structures.Protoss.Basic
 {
-    class Gateway : ProtossBaseObject
+    class Gateway
     {
         public Gateway()
-            : base("Gateway", 600, 2, 85, 600)
         {
         }
     }

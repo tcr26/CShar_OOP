@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace StarCraft.Structures.Protoss.Basic
 {
-    public class Nexus : ProtossBaseObject
+    public class Nexus
     {
         public Nexus()
-            : base("Nexus", 750, 2, 180, 750)
         {
         }
 

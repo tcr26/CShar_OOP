@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace StarCraft.Structures.Protoss.Advanced
 {
-    public class RoboticsFacility : ProtossBaseObject
+    public class RoboticsFacility
     {
         public RoboticsFacility()
-            : base("Robotics Facility", 450, 1, 85, 450)
         {
 
         }

@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace StarCraft.Structures.Protoss.Advanced
 {
-    public class DarkShrine : ProtossBaseObject
+    public class DarkShrine
     {
         public DarkShrine()
-            : base("Dark Shrine", 450, 1, 95, 450)
         {
 
         }

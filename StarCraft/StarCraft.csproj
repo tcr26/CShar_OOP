@@ -81,15 +81,14 @@
     <Compile Include="Units\Terran\Marine.cs" />
     <Compile Include="Units\Terran\Medic.cs" />
     <Compile Include="Units\Terran\SCV.cs" />
-    <Compile Include="Units\Zerg\Zergling.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Structures\Zerg\Advanced\" />
     <Folder Include="Structures\Zerg\Basic\" />
+    <Folder Include="Units\Zerg\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

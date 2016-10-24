@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace StarCraft.Structures.Protoss.Basic
 {
-    public class Pylon : ProtossBaseObject
+    public class Pylon
     {
         public Pylon()
-            : base("Pylon", 300, 1, 30, 300)
         {
 
         }

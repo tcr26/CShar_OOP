@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace StarCraft.Structures.Protoss.Basic
 {
-    public class CyberneticsCore : ProtossBaseObject
+    public class CyberneticsCore
     {
         public CyberneticsCore()
-            : base("Cybernetics Core", 350, 1, 65, 350)
         {
 
         }

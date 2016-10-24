@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace StarCraft.Structures.Protoss.Basic
 {
-    public class Forge : ProtossBaseObject
+    public class Forge
     {
         public Forge()
-            : base("Forge", 350, 2, 80, 350)
         {
 
         }

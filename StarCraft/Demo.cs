@@ -1,8 +1,4 @@
 ﻿using System;
-using StarCraft.Structures.Terran.Basic;
-using StarCraft;
-using StarCraft.Units.Terran;
-using StarCraft.Structures.Protoss.Basic;
 using StarCraft.Units.Protoss;
 
 namespace StarCraft.Units
@@ -12,14 +8,13 @@ namespace StarCraft.Units
         static void Main()
         {
 
-            Nexus baza = new Nexus();
             Zealot zelka = new Zealot();
-            Console.WriteLine(baza.propertyCheck(zelka, "Shield"));
-            Console.WriteLine(zelka.HitPoints);
+            Console.WriteLine(zelka.AttackSpeed);
 
             Marine marin = new Marine();
-            Console.WriteLine(marin.HitPoints);
-            Console.WriteLine(baza.propertyCheck(marin, "Shield"));
+            Console.WriteLine(marin.MovementSpeed);
+
+            Console.WriteLine(zelka.propertyCheck(zelka, "Shield"));
 
             //CommandCenter comand = new CommandCenter();
             //Console.WriteLine(comand.HitPoints);

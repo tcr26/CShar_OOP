@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace StarCraft.Units.Protoss
 {
-    public class Zealot : BaseUnitAdvanced
+    public class Zealot : ProtossBaseObject
     {
         public Zealot()
-            : base(8, 1, 1, 0, "Zealot", 75, 1, 30, 75, "Rank", 1)
+            : base("Zealot", 75, 1, 30, 75, 8, 1, 1, 0, "Rank", 1)
         {
 
         }
