@@ -4,3 +4,6 @@ D:\WEB\Junk\OOPTasks\StarCraft\bin\Debug\StarCraft.pdb
 D:\WEB\Junk\OOPTasks\StarCraft\obj\Debug\StarCraft.csprojResolveAssemblyReference.cache
 D:\WEB\Junk\OOPTasks\StarCraft\obj\Debug\StarCraft.exe
 D:\WEB\Junk\OOPTasks\StarCraft\obj\Debug\StarCraft.pdb
+C:\Users\inZt1nct\Documents\GitHub\CShar_OOP\StarCraft\bin\Debug\StarCraft.exe.config
+C:\Users\inZt1nct\Documents\GitHub\CShar_OOP\StarCraft\obj\Debug\StarCraft.exe
+C:\Users\inZt1nct\Documents\GitHub\CShar_OOP\StarCraft\obj\Debug\StarCraft.pdb
