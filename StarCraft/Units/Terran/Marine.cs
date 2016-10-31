@@ -28,10 +28,10 @@ namespace StarCraft.Units
             HitPoints += 10;
         }
 
-        //public override void Attack(BaseUnit unitToAttack)
+        //public override void Attack(BaseUnitAdvanced unitToAttack)
         //{
-        //    base.Attack(unitToAttack);
-        //    Thread.Sleep((int)(500 / AttackSpeed));
+        //    Attack(unitToAttack);
+        //    Thread.Sleep((int)(1000 / AttackSpeed));
         //}
 
 

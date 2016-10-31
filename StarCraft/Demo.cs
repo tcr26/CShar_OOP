@@ -1,24 +1,31 @@
 ﻿using System;
 using StarCraft.Units.Protoss;
-
+using StarCraft.Structures.Protoss.Basic;
+using System.Collections.Generic;
+using System.Linq;
 namespace StarCraft.Units
 {
     class Demo
     {
         static void Main()
         {
-
             Zealot zelka = new Zealot();
-            Console.WriteLine(zelka.AttackSpeed);
+            //Console.WriteLine(zelka.Shield);
 
             Marine marin = new Marine();
-            Console.WriteLine(marin.MovementSpeed);
+            //Console.WriteLine(marin.ManaPoints);
 
-            Console.WriteLine(zelka.propertyCheck(zelka, "Shield"));
-
-            //CommandCenter comand = new CommandCenter();
-            //Console.WriteLine(comand.HitPoints);
-
+            if (zelka is ProtossBaseObject)
+            {
+                marin.AttackShield(zelka, zelka);
+            }
+            if (!(marin is ProtossBaseObject))
+            {
+                while (marin.HitPoints >= 0)
+                {
+                    zelka.AttackHitPoints(marin);
+                }
+            }
 
             //SCV bob = new SCV();
             //Marine kurty = new Marine();
@@ -31,10 +38,6 @@ namespace StarCraft.Units
             //{
             //    petka.Fly();
             //}
-
-            //Console.WriteLine(DateTime.Now);
-            //lalio.TrainingUnit(lalio);
-            //Console.WriteLine(DateTime.Now);
 
             //while (kurty.HitPoints > 0 || bob.HitPoints > 0)
             //{

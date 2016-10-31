@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using StarCraft;
 
 namespace StarCraft.Units
 {
@@ -22,11 +24,38 @@ namespace StarCraft.Units
         public int AttackPoints { get; set; }
         public double AttackSpeed { get; set; }
 
-        public virtual void Attack(BaseUnit unitToAttack)
+        public static bool propertyCheck(dynamic objectName, string prop)
         {
-            Console.WriteLine("Attacking {0}", unitToAttack.UnitName);
+            return objectName.GetType().GetProperty(prop) != null;
+        }
+
+        public virtual void AttackShield(ProtossBaseObject objectShield, StarCraftBaseObject objectHitPoints)
+        {
+            if (propertyCheck(objectShield, "Shield"))
+            {
+                while (objectShield.Shield >= 0)
+                {
+                    Console.WriteLine("Attacking {0} with {1} Shield", objectShield.ObjectName, objectShield.Shield);
+                    objectShield.Shield -= (AttackPoints - objectShield.ArmorPoints);
+                    Console.WriteLine("Shield left after the attack...{0}", objectShield.Shield);
+                    Console.ReadKey();
+                }
+                while (objectHitPoints.HitPoints >= 0)
+                {
+                    Console.WriteLine("Attacking {0} with {1} HitPoints", objectHitPoints.ObjectName, objectHitPoints.HitPoints);
+                    objectHitPoints.HitPoints -= (AttackPoints - objectHitPoints.ArmorPoints);
+                    Console.WriteLine("HitPoints left after the attack...{0}", objectHitPoints.HitPoints);
+                    Console.ReadKey();
+                }
+            }
+        }
+
+        public virtual void AttackHitPoints(StarCraftBaseObject unitToAttack)
+        {
+            Console.WriteLine("Attacking {0} with {1} HitPoints", unitToAttack.ObjectName, unitToAttack.HitPoints);
             unitToAttack.HitPoints -= (AttackPoints - unitToAttack.ArmorPoints);
             Console.WriteLine("HitPoints left after the attack...{0}", unitToAttack.HitPoints);
+            Console.ReadKey();
         }
     }
 }

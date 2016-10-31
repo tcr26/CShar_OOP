@@ -24,7 +24,5 @@ namespace StarCraft.Units
             Console.WriteLine("Training {0}", unitToTrain.UnitName);
             Thread.Sleep(1000 * unitToTrain.Training);
         }
-
-
     }
 }
