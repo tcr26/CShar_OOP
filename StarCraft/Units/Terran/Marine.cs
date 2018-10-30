@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 
 namespace StarCraft.Units
 {
@@ -9,6 +8,7 @@ namespace StarCraft.Units
             : base(5, 1, 1, 0, "Marine", 45, 0, 20, 0, "Private", 1)
         {
         }
+
         public void UseStimPack()
         {
             if (HitPoints > 10)
@@ -33,7 +33,6 @@ namespace StarCraft.Units
         //    Attack(unitToAttack);
         //    Thread.Sleep((int)(1000 / AttackSpeed));
         //}
-
 
         //public override void TrainingUnit(BaseUnit UnitToTrain)
         //{

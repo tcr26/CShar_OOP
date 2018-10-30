@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StarCraft.Structures.Protoss.Basic
+﻿namespace StarCraft.Structures.Protoss.Basic
 {
-    class Gateway
+    internal class Gateway
     {
         public Gateway()
         {

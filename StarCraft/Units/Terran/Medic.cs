@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace StarCraft.Units
+﻿namespace StarCraft.Units
 {
-    class Medic
+    internal class Medic
     {
         public Medic()
         {

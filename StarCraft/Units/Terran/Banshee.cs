@@ -1,5 +1,5 @@
-﻿
-using System;
+﻿using System;
+
 namespace StarCraft.Units.Terran
 {
     public class Banshee

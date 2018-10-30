@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Threading;
 
 namespace StarCraft.Units
 {
-    class SCV
+    internal class SCV
     {
         public SCV()
         {
@@ -18,6 +17,7 @@ namespace StarCraft.Units
         {
             Console.WriteLine("Searching for minerals");
         }
+
         private void SearchForVespine()
         {
             Console.WriteLine("Searching for gas");

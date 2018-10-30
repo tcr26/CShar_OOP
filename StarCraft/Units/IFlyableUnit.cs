@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StarCraft.Units
+﻿namespace StarCraft.Units
 {
-    interface IFlyableUnit
+    internal interface IFlyableUnit
     {
         void Fly();
     }

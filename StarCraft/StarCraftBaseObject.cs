@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StarCraft
+﻿namespace StarCraft
 {
     public abstract class StarCraftBaseObject
     {
@@ -19,6 +14,5 @@ namespace StarCraft
         public int HitPoints { get; set; }
         public int ArmorPoints { get; set; }
         public int TimeToConstruct { get; set; }
-
     }
 }

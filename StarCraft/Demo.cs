@@ -1,13 +1,10 @@
-﻿using System;
-using StarCraft.Units.Protoss;
-using StarCraft.Structures.Protoss.Basic;
-using System.Collections.Generic;
-using System.Linq;
+﻿using StarCraft.Units.Protoss;
+
 namespace StarCraft.Units
 {
-    class Demo
+    internal class Demo
     {
-        static void Main()
+        private static void Main()
         {
             Zealot zelka = new Zealot();
             //Console.WriteLine(zelka.Shield);
@@ -41,7 +38,6 @@ namespace StarCraft.Units
 
             //while (kurty.HitPoints > 0 || bob.HitPoints > 0)
             //{
-
             //    kurty.Attack(bob);
             //    Console.WriteLine("Health after the attack {0}", bob.HitPoints);
             //    Console.WriteLine("Mana after the heal: {0}", ani.ManaPoints);
