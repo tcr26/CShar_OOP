@@ -1,13 +1,13 @@
 ﻿namespace StarCraft
 {
-    public abstract class StarCraftBaseObject
+    public abstract class BaseObject
     {
-        public StarCraftBaseObject(string objectName, int hitPoints, int armorPoints, int timeToConstruct)
+        public BaseObject(string objectName, int hitPoints, int armorPoints, int constructionTime)
         {
             ObjectName = objectName;
             HitPoints = hitPoints;
             ArmorPoints = armorPoints;
-            TimeToConstruct = timeToConstruct;
+            ConstructionTime = constructionTime;
         }
 
         public string ObjectName { get; set; }
@@ -16,6 +16,6 @@
 
         public int ArmorPoints { get; set; }
 
-        public int TimeToConstruct { get; set; }
+        public int ConstructionTime { get; set; }
     }
 }

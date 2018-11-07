@@ -1,9 +1,9 @@
 ﻿namespace StarCraft.Structures.Terran.Basic
 {
-    internal class Barracks : StarCraftBaseObject
+    public class Barracks
     {
         public Barracks()
-            : base("Barracks", 1000, 1, 65)
+
         {
         }
     }

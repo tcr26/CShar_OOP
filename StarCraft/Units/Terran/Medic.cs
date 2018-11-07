@@ -1,13 +1,13 @@
-﻿namespace StarCraft.Units
+﻿namespace StarCraft.Units.Terran
+
 {
-    internal class Medic
+    public class Medic : BaseUnit, IManaPoints
     {
-        public Medic()
+        public Medic() : base("Medic", 55, 0, 35)
         {
+            ManaPoints = 200;
         }
 
-        public void Heal(BaseUnit UnitToHeal)
-        {
-        }
+        public int ManaPoints { get; set; }
     }
 }

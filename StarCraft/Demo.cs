@@ -1,64 +1,39 @@
 ﻿using StarCraft.Units.Protoss;
+using StarCraft.Units.Terran;
+using StarCraft.Units.Zerg;
+using System;
 
 namespace StarCraft.Units
 {
-    internal class Demo
+    public class Demo
     {
         private static void Main()
         {
-            Zealot zelka = new Zealot();
-            //Console.WriteLine(zelka.Shield);
+            Zealot zealot = new Zealot();
+            Console.WriteLine(zealot.ObjectName);
+            Console.WriteLine(zealot.Shield);
+            Console.WriteLine(zealot.AttackPower);
+            Console.WriteLine(zealot.AttackRange);
+            Console.WriteLine(zealot.AttackRate);
 
-            Marine marin = new Marine();
-            //Console.WriteLine(marin.ManaPoints);
+            Marine marine = new Marine();
+            Console.WriteLine(marine.ObjectName);
+            Console.WriteLine(marine.HitPoints);
+            Console.WriteLine(marine.AttackPower);
+            Console.WriteLine(marine.AttackRange);
+            Console.WriteLine(marine.AttackRate);
 
-            if (zelka is ProtossBaseObject)
-            {
-                marin.AttackShield(zelka, zelka);
-            }
-            if (!(marin is ProtossBaseObject))
-            {
-                while (marin.HitPoints >= 0)
-                {
-                    zelka.AttackHitPoints(marin);
-                }
-            }
+            Medic medic = new Medic();
+            Console.WriteLine(medic.ObjectName);
+            Console.WriteLine(medic.ManaPoints);
 
-            //SCV bob = new SCV();
-            //Marine kurty = new Marine();
-            //Marine lalio = new Marine();
-            //Medic ani = new Medic();
-            //Medic reni = new Medic();
-            //Banshee petka = new Banshee();
-
-            //if (petka is IFlyableUnit)
-            //{
-            //    petka.Fly();
-            //}
-
-            //while (kurty.HitPoints > 0 || bob.HitPoints > 0)
-            //{
-            //    kurty.Attack(bob);
-            //    Console.WriteLine("Health after the attack {0}", bob.HitPoints);
-            //    Console.WriteLine("Mana after the heal: {0}", ani.ManaPoints);
-            //    bob.Attack(kurty);
-            //    Console.WriteLine("Health after the attack {0}", kurty.HitPoints);
-            //    Console.WriteLine("Mana after the heal: {0}", reni.ManaPoints);
-
-            //    if (kurty.HitPoints <= 0 || bob.HitPoints <= 0)
-            //    {
-            //        Console.WriteLine("OWNED");
-            //        break;
-            //    }
-
-            //    if ((kurty.HitPoints < 45) || (bob.HitPoints < 45))
-            //    {
-            //        ani.Heal(kurty);
-            //        Console.WriteLine("{0} Health after the heal {1}", "kurty", kurty.HitPoints);
-            //        reni.Heal(bob);
-            //        Console.WriteLine("{0} Health after the heal {1}", "bob", bob.HitPoints);
-            //    }
-            //}
+            Zergling zergling = new Zergling();
+            Console.WriteLine(zergling.ObjectName);
+            Console.WriteLine(zergling.HitPointsRegenerateRate);
+            Console.WriteLine(zergling.AttackPower);
+            Console.WriteLine(zergling.AttackRange);
+            Console.WriteLine(zergling.AttackRate);
+            Console.ReadKey();
         }
     }
 }

@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StarCraft.Structures.Zerg.Advanced
+﻿namespace StarCraft.Structures.Zerg.Advanced
 {
-    class InfestationPit : StarCraftBaseObject
+    public class InfestationPit : BaseObject, IZergBaseObject
     {
         public InfestationPit()
             : base("Infestation Pit", 550, 1, 80)
         {
-
+            HitPointsRegenerateRate = 3;
         }
+
+        public int HitPointsRegenerateRate { get; set; }
     }
 }

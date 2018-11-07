@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StarCraft.Structures.Zerg.Advanced
+﻿namespace StarCraft.Structures.Zerg.Advanced
 {
-    class Spire : StarCraftBaseObject
+    public class Spire : BaseObject, IZergBaseObject
     {
         public Spire()
             : base("Spire", 750, 1, 85)
         {
-
+            HitPointsRegenerateRate = 3;
         }
+
+        public int HitPointsRegenerateRate { get; set; }
     }
 }

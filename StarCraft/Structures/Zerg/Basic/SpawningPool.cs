@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StarCraft.Structures.Zerg.Basic
+﻿namespace StarCraft.Structures.Zerg.Basic
 {
-    class SpawningPool : StarCraftBaseObject
+    public class SpawningPool : BaseObject, IZergBaseObject
     {
         public SpawningPool()
             : base("Spawning Pool", 1000, 1, 55)
         {
-
+            HitPointsRegenerateRate = 3;
         }
+
+        public int HitPointsRegenerateRate { get; set; }
     }
 }

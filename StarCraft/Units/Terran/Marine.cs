@@ -1,44 +1,18 @@
-﻿using System;
-
-namespace StarCraft.Units
+﻿namespace StarCraft.Units.Terran
 {
-    public class Marine : BaseUnitAdvanced
+    public class Marine : BaseUnit, IAttackObject
     {
-        public Marine()
-            : base(5, 1, 1, 0, "Marine", 45, 0, 20, 0, "Private", 1)
+        public Marine() : base("Marine", 45, 0, 20)
         {
+            AttackPower = 5;
+            AttackRange = 6;
+            AttackRate = 1.7F;
         }
 
-        public void UseStimPack()
-        {
-            if (HitPoints > 10)
-            {
-                Console.WriteLine("Hell YEAH!Using Stim Pack");
-                HitPoints -= 10;
-            }
-            else
-            {
-                Console.WriteLine("Not Enough HitPoints");
-            }
-        }
+        public int AttackPower { get; set; }
 
-        public void EquipCombatShield()
-        {
-            Console.WriteLine("Combat Shield Equiped");
-            HitPoints += 10;
-        }
+        public int AttackRange { get; set; }
 
-        //public override void Attack(BaseUnitAdvanced unitToAttack)
-        //{
-        //    Attack(unitToAttack);
-        //    Thread.Sleep((int)(1000 / AttackSpeed));
-        //}
-
-        //public override void TrainingUnit(BaseUnit UnitToTrain)
-        //{
-        //    Console.WriteLine("Start");
-        //    base.TrainingUnit(UnitToTrain);
-        //    Console.WriteLine("DONE");
-        //}
+        public float AttackRate { get; set; }
     }
 }

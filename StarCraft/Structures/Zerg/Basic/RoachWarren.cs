@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StarCraft.Structures.Zerg.Basic
+﻿namespace StarCraft.Structures.Zerg.Basic
 {
-    class RoachWarren : StarCraftBaseObject
+    public class RoachWarren : BaseObject, IZergBaseObject
     {
         public RoachWarren()
             : base("Roach Warren", 650, 1, 45)
         {
-
+            HitPointsRegenerateRate = 3;
         }
+
+        public int HitPointsRegenerateRate { get; set; }
     }
 }

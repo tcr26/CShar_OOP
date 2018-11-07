@@ -1,16 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StarCraft.Units.Zerg
+﻿namespace StarCraft.Units.Zerg
 {
-    class Zergling : BaseUnit
+    public class Zergling : BaseUnitAdvanced, IAttackObject, IZergBaseObject
     {
-        public Zergling(string objectName, int hp, int armorPoints, int construction, string rank, int movementSpeed)
-            : base(objectName, hp, armorPoints, construction, rank, movementSpeed)
+        public Zergling() : base("Zerling", 25, 0, 20, 2, "Bug")
+
         {
+            AttackPower = 7;
+            AttackRange = 1;
+            AttackRate = 1;
+            HitPointsRegenerateRate = 2;
         }
+
+        public int AttackPower { get; set; }
+
+        public int AttackRange { get; set; }
+
+        public float AttackRate { get; set; }
+
+        public int HitPointsRegenerateRate { get; set; }
     }
 }

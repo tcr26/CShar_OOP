@@ -1,9 +1,9 @@
 ﻿namespace StarCraft.Structures.Terran.Basic
 {
-    internal class EngineeringBay : StarCraftBaseObject
+    public class EngineeringBay
     {
         public EngineeringBay()
-            : base("Engineering Bay", 750, 1, 45)
+
         {
         }
     }

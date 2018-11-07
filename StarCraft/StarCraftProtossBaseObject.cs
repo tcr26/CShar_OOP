@@ -13,7 +13,7 @@ namespace StarCraft
 
         public int Shield { get; set; }
 
-        public virtual void shieldRegenaration(ProtossBaseObject objectName)
+        public virtual void ShieldRegenaration(ProtossBaseObject objectName)
         {
             do
             {

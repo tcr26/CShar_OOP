@@ -1,9 +1,9 @@
 ﻿namespace StarCraft.Structures.Terran.Advanced
 {
-    internal class Armory : StarCraftBaseObject
+    public class Armory
     {
         public Armory()
-            : base("Armory", 700, 1, 90)
+
         {
         }
     }

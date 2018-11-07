@@ -1,17 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StarCraft.Structures.Zerg.Basic
+﻿namespace StarCraft.Structures.Zerg.Basic
 {
-    class SpineCrawler : StarCraftBaseObject
+    public class SpineCrawler : BaseObject, IZergBaseObject, IAttackObject
     {
         public SpineCrawler()
             : base("Spine Crawler", 500, 1, 40)
         {
-
+            AttackPower = 7;
+            AttackRange = 1;
+            AttackRate = 1;
+            HitPointsRegenerateRate = 2;
         }
+
+        public int AttackPower { get; set; }
+
+        public int AttackRange { get; set; }
+
+        public float AttackRate { get; set; }
+
+        public int HitPointsRegenerateRate { get; set; }
     }
 }

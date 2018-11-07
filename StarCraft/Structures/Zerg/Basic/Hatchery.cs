@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StarCraft.Structures.Zerg.Basic
+﻿namespace StarCraft.Structures.Zerg.Basic
 {
-    class Hatchery : StarCraftBaseObject
+    public class Hatchery : BaseObject, IZergBaseObject
     {
         public Hatchery()
             : base("Hatchery", 1500, 1, 80)
         {
-
+            HitPointsRegenerateRate = 3;
         }
+
+        public int HitPointsRegenerateRate { get; set; }
     }
 }

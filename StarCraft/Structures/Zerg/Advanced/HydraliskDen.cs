@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StarCraft.Structures.Zerg.Advanced
+﻿namespace StarCraft.Structures.Zerg.Advanced
 {
-    class HydraliskDen : StarCraftBaseObject
+    public class HydraliskDen : BaseObject, IZergBaseObject
     {
         public HydraliskDen()
             : base("Hydralisk Den", 450, 1, 55)
         {
-
+            HitPointsRegenerateRate = 3;
         }
+
+        public int HitPointsRegenerateRate { get; set; }
     }
 }

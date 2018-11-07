@@ -1,9 +1,9 @@
 ﻿namespace StarCraft.Structures.Terran.Basic
 {
-    internal class Refinery : StarCraftBaseObject
+    public class Refinery
     {
         public Refinery()
-            : base("Refinery", 750, 1, 35)
+
         {
         }
     }

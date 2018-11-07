@@ -7,10 +7,10 @@ D:\WEB\Junk\OOPTasks\StarCraft\obj\Debug\StarCraft.pdb
 C:\Users\inZt1nct\Documents\GitHub\CShar_OOP\StarCraft\bin\Debug\StarCraft.exe.config
 C:\Users\inZt1nct\Documents\GitHub\CShar_OOP\StarCraft\obj\Debug\StarCraft.exe
 C:\Users\inZt1nct\Documents\GitHub\CShar_OOP\StarCraft\obj\Debug\StarCraft.pdb
-C:\Users\inZt1nct\Source\Repos\tcr26\CShar_OOP\StarCraft\bin\Debug\StarCraft.exe.config
-C:\Users\inZt1nct\Source\Repos\tcr26\CShar_OOP\StarCraft\bin\Debug\StarCraft.exe
-C:\Users\inZt1nct\Source\Repos\tcr26\CShar_OOP\StarCraft\bin\Debug\StarCraft.pdb
-C:\Users\inZt1nct\Source\Repos\tcr26\CShar_OOP\StarCraft\obj\Debug\StarCraft.csprojAssemblyReference.cache
-C:\Users\inZt1nct\Source\Repos\tcr26\CShar_OOP\StarCraft\obj\Debug\StarCraft.csproj.CoreCompileInputs.cache
-C:\Users\inZt1nct\Source\Repos\tcr26\CShar_OOP\StarCraft\obj\Debug\StarCraft.exe
-C:\Users\inZt1nct\Source\Repos\tcr26\CShar_OOP\StarCraft\obj\Debug\StarCraft.pdb
+D:\Junk\CShar_OOP-master\StarCraft\bin\Debug\StarCraft.exe.config
+D:\Junk\CShar_OOP-master\StarCraft\bin\Debug\StarCraft.exe
+D:\Junk\CShar_OOP-master\StarCraft\bin\Debug\StarCraft.pdb
+D:\Junk\CShar_OOP-master\StarCraft\obj\Debug\StarCraft.csprojAssemblyReference.cache
+D:\Junk\CShar_OOP-master\StarCraft\obj\Debug\StarCraft.csproj.CoreCompileInputs.cache
+D:\Junk\CShar_OOP-master\StarCraft\obj\Debug\StarCraft.exe
+D:\Junk\CShar_OOP-master\StarCraft\obj\Debug\StarCraft.pdb

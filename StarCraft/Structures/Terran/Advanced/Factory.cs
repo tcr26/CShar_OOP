@@ -1,9 +1,9 @@
 ﻿namespace StarCraft.Structures.Terran.Advanced
 {
-    internal class Factory : StarCraftBaseObject
+    public class Factory
     {
         public Factory()
-            : base("Factory", 800, 1, 75)
+
         {
         }
     }

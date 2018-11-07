@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StarCraft.Structures.Zerg.Advanced
+﻿namespace StarCraft.Structures.Zerg.Advanced
 {
-    class NydusNetwork : StarCraftBaseObject
+    public class NydusNetwork : BaseObject, IZergBaseObject
     {
         public NydusNetwork()
             : base("Nydus Network", 400, 1, 60)
         {
-
+            HitPointsRegenerateRate = 3;
         }
+
+        public int HitPointsRegenerateRate { get; set; }
     }
 }
