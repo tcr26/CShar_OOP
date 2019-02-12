@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StarCraft</RootNamespace>
     <AssemblyName>StarCraft</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -42,66 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IAttackObject.cs" />
     <Compile Include="Demo.cs" />
-    <Compile Include="IManaPoints.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BaseObject.cs" />
-    <Compile Include="IProtossBaseObject.cs" />
-    <Compile Include="Structures\Protoss\Advanced\Dark Shrine.cs" />
-    <Compile Include="Structures\Protoss\Advanced\Fleet Beacon.cs" />
-    <Compile Include="Structures\Protoss\Advanced\Robotics Bay.cs" />
-    <Compile Include="Structures\Protoss\Advanced\Robotics Facility.cs" />
-    <Compile Include="Structures\Protoss\Advanced\Stargate.cs" />
-    <Compile Include="Structures\Protoss\Advanced\Templar Archives.cs" />
-    <Compile Include="Structures\Protoss\Advanced\Twilight Council.cs" />
-    <Compile Include="Structures\Protoss\Basic\Assimilator.cs" />
-    <Compile Include="Structures\Protoss\Basic\Cybernetics Core.cs" />
-    <Compile Include="Structures\Protoss\Basic\Forge.cs" />
-    <Compile Include="Structures\Protoss\Basic\Gateway.cs" />
-    <Compile Include="Structures\Protoss\Basic\Nexus.cs" />
-    <Compile Include="Structures\Protoss\Basic\Photon Cannon.cs" />
-    <Compile Include="Structures\Protoss\Basic\Pylon.cs" />
-    <Compile Include="Structures\Terran\Advanced\Armory.cs" />
-    <Compile Include="Structures\Terran\Advanced\Factory.cs" />
-    <Compile Include="Structures\Terran\Advanced\GhostAcademy.cs" />
-    <Compile Include="Structures\Terran\Advanced\Starport.cs" />
-    <Compile Include="Structures\Terran\Basic\Barracks.cs" />
-    <Compile Include="Structures\Terran\Basic\Bunker.cs" />
-    <Compile Include="Structures\Terran\Basic\CommandCenter.cs" />
-    <Compile Include="Structures\Terran\Basic\EngineeringBay.cs" />
-    <Compile Include="Structures\Terran\Basic\MissileTurret.cs" />
-    <Compile Include="Structures\Terran\Basic\Refinery.cs" />
-    <Compile Include="Structures\Terran\Basic\SensorTower.cs" />
-    <Compile Include="Structures\Terran\Basic\SupplyDepot.cs" />
-    <Compile Include="Structures\Zerg\Advanced\HydraliskDen.cs" />
-    <Compile Include="Structures\Zerg\Advanced\InfestationPit.cs" />
-    <Compile Include="Structures\Zerg\Advanced\LurkerDen.cs" />
-    <Compile Include="Structures\Zerg\Advanced\NydusNetwork.cs" />
-    <Compile Include="Structures\Zerg\Advanced\Spire.cs" />
-    <Compile Include="Structures\Zerg\Advanced\UltraliskCavern.cs" />
-    <Compile Include="Structures\Zerg\Basic\BanelingNest.cs" />
-    <Compile Include="Structures\Zerg\Basic\EvolutionChamber.cs" />
-    <Compile Include="Structures\Zerg\Basic\Extractor.cs" />
-    <Compile Include="Structures\Zerg\Basic\Hatchery.cs" />
-    <Compile Include="Structures\Zerg\Basic\RoachWarren.cs" />
-    <Compile Include="Structures\Zerg\Basic\SpawningPool.cs" />
-    <Compile Include="Structures\Zerg\Basic\SpineCrawler.cs" />
-    <Compile Include="Structures\Zerg\Basic\SporeCrawler.cs" />
-    <Compile Include="Units\BaseUnit.cs" />
-    <Compile Include="Units\BaseUnitAdvanced.cs" />
-    <Compile Include="Units\Protoss\Zealot.cs" />
-    <Compile Include="Units\Terran\Banshee.cs" />
-    <Compile Include="Units\Terran\Marine.cs" />
-    <Compile Include="Units\Terran\Medic.cs" />
-    <Compile Include="Units\Terran\SCV.cs" />
-    <Compile Include="Units\Zerg\Zergling.cs" />
-    <Compile Include="IZergBaseObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\StarCraft.Contracts\StarCraft.Contracts.csproj">
+      <Project>{35671ef1-f0d3-4f4f-8421-77bd2b691d83}</Project>
+      <Name>StarCraft.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

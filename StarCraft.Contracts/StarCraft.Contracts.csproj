@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35671EF1-F0D3-4F4F-8421-77BD2B691D83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StarCraft.Contracts</RootNamespace>
+    <AssemblyName>StarCraft.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseObject.cs" />
+    <Compile Include="Interfaces\IAttacking.cs" />
+    <Compile Include="ProtossShield.cs" />
+    <Compile Include="Structures\Protoss\Advanced\Dark Shrine.cs" />
+    <Compile Include="Structures\Protoss\Advanced\Fleet Beacon.cs" />
+    <Compile Include="Structures\Protoss\Advanced\Robotics Bay.cs" />
+    <Compile Include="Structures\Protoss\Advanced\Robotics Facility.cs" />
+    <Compile Include="Structures\Protoss\Advanced\Stargate.cs" />
+    <Compile Include="Structures\Protoss\Advanced\Templar Archives.cs" />
+    <Compile Include="Structures\Protoss\Advanced\Twilight Council.cs" />
+    <Compile Include="Structures\Protoss\Basic\Assimilator.cs" />
+    <Compile Include="Structures\Protoss\Basic\Cybernetics Core.cs" />
+    <Compile Include="Structures\Protoss\Basic\Forge.cs" />
+    <Compile Include="Structures\Protoss\Basic\Gateway.cs" />
+    <Compile Include="Structures\Protoss\Basic\Nexus.cs" />
+    <Compile Include="Structures\Protoss\Basic\Photon Cannon.cs" />
+    <Compile Include="Structures\Protoss\Basic\Pylon.cs" />
+    <Compile Include="Structures\Terran\Advanced\Armory.cs" />
+    <Compile Include="Structures\Terran\Advanced\Factory.cs" />
+    <Compile Include="Structures\Terran\Advanced\GhostAcademy.cs" />
+    <Compile Include="Structures\Terran\Advanced\Starport.cs" />
+    <Compile Include="Structures\Terran\Basic\Barracks.cs" />
+    <Compile Include="Structures\Terran\Basic\Bunker.cs" />
+    <Compile Include="Structures\Terran\Basic\CommandCenter.cs" />
+    <Compile Include="Structures\Terran\Basic\EngineeringBay.cs" />
+    <Compile Include="Structures\Terran\Basic\MissileTurret.cs" />
+    <Compile Include="Structures\Terran\Basic\Refinery.cs" />
+    <Compile Include="Structures\Terran\Basic\SensorTower.cs" />
+    <Compile Include="Structures\Terran\Basic\SupplyDepot.cs" />
+    <Compile Include="Structures\Zerg\Advanced\HydraliskDen.cs" />
+    <Compile Include="Structures\Zerg\Advanced\InfestationPit.cs" />
+    <Compile Include="Structures\Zerg\Advanced\LurkerDen.cs" />
+    <Compile Include="Structures\Zerg\Advanced\NydusNetwork.cs" />
+    <Compile Include="Structures\Zerg\Advanced\Spire.cs" />
+    <Compile Include="Structures\Zerg\Advanced\UltraliskCavern.cs" />
+    <Compile Include="Structures\Zerg\Basic\BanelingNest.cs" />
+    <Compile Include="Structures\Zerg\Basic\EvolutionChamber.cs" />
+    <Compile Include="Structures\Zerg\Basic\Extractor.cs" />
+    <Compile Include="Structures\Zerg\Basic\Hatchery.cs" />
+    <Compile Include="Structures\Zerg\Basic\RoachWarren.cs" />
+    <Compile Include="Structures\Zerg\Basic\SpawningPool.cs" />
+    <Compile Include="Structures\Zerg\Basic\SpineCrawler.cs" />
+    <Compile Include="Structures\Zerg\Basic\SporeCrawler.cs" />
+    <Compile Include="Interfaces\IBaseUnitAdvanced.cs" />
+    <Compile Include="Units\Protoss\WarpGate\Zealot.cs" />
+    <Compile Include="Units\Terran\Barrack\Marine.cs" />
+    <Compile Include="Units\Terran\Barrack\Medic.cs" />
+    <Compile Include="Units\Terran\CommandCenter\SCV.cs" />
+    <Compile Include="Units\Terran\Starport\Banshee.cs" />
+    <Compile Include="Units\Zerg\SpawningPool\Zergling.cs" />
+    <Compile Include="Interfaces\IAttackObject.cs" />
+    <Compile Include="Interfaces\IManaPoints.cs" />
+    <Compile Include="Interfaces\IZergHealthRegeneration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Units\Terran\Factory\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

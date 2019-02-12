@@ -14,3 +14,13 @@ D:\Junk\CShar_OOP-master\StarCraft\obj\Debug\StarCraft.csprojAssemblyReference.c
 D:\Junk\CShar_OOP-master\StarCraft\obj\Debug\StarCraft.csproj.CoreCompileInputs.cache
 D:\Junk\CShar_OOP-master\StarCraft\obj\Debug\StarCraft.exe
 D:\Junk\CShar_OOP-master\StarCraft\obj\Debug\StarCraft.pdb
+D:\Junk\CShar_OOP\StarCraft\bin\Debug\StarCraft.exe.config
+D:\Junk\CShar_OOP\StarCraft\bin\Debug\StarCraft.exe
+D:\Junk\CShar_OOP\StarCraft\bin\Debug\StarCraft.pdb
+D:\Junk\CShar_OOP\StarCraft\obj\Debug\StarCraft.csprojAssemblyReference.cache
+D:\Junk\CShar_OOP\StarCraft\obj\Debug\StarCraft.csproj.CoreCompileInputs.cache
+D:\Junk\CShar_OOP\StarCraft\obj\Debug\StarCraft.exe
+D:\Junk\CShar_OOP\StarCraft\obj\Debug\StarCraft.pdb
+D:\Junk\CShar_OOP\StarCraft\bin\Debug\StarCraft.Contracts.dll
+D:\Junk\CShar_OOP\StarCraft\bin\Debug\StarCraft.Contracts.pdb
+D:\Junk\CShar_OOP\StarCraft\obj\Debug\StarCraft.csproj.CopyComplete

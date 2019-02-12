@@ -1,39 +1,53 @@
-﻿using StarCraft.Units.Protoss;
-using StarCraft.Units.Terran;
-using StarCraft.Units.Zerg;
-using System;
+﻿using StarCraft.API.Controllers;
+using StarCraft.Contracts.Structures.Protoss.Basic;
+using StarCraft.Units.Protoss.WarpGate;
+using StarCraft.Units.Terran.Barrack;
+using StarCraft.Units.Zerg.SpawningPool;
+using System.Collections.Generic;
 
-namespace StarCraft.Units
+namespace StarCraft
 {
     public class Demo
     {
         private static void Main()
         {
-            Zealot zealot = new Zealot();
-            Console.WriteLine(zealot.ObjectName);
-            Console.WriteLine(zealot.Shield);
-            Console.WriteLine(zealot.AttackPower);
-            Console.WriteLine(zealot.AttackRange);
-            Console.WriteLine(zealot.AttackRate);
+            var unitController = new UnitController();
 
-            Marine marine = new Marine();
-            Console.WriteLine(marine.ObjectName);
-            Console.WriteLine(marine.HitPoints);
-            Console.WriteLine(marine.AttackPower);
-            Console.WriteLine(marine.AttackRange);
-            Console.WriteLine(marine.AttackRate);
+            var unit = new Marine
+            {
+                AttackPower = 5,
+                AttackRange = 6,
+                AttackRate = 1.7F,
+                MovementSpeed = 1,
+                Rank = "Doker",
+                ObjectName = "Marin",
+                HitPoints = 65,
+                ArmorPoints = 0,
+                ConstructionTime = 10,
+                Attributes = new List<string> { "Light", "Biological" }
+            };
 
-            Medic medic = new Medic();
-            Console.WriteLine(medic.ObjectName);
-            Console.WriteLine(medic.ManaPoints);
+            //{
+            //	"Id" : "4",
+            //	"ObjectName" : "Zergling",
+            //	"HitPoints" : "25",
+            //	"ArmorPoints" : "0",
+            //	"ConstructionTime" : "20",
+            //	"Attributes" : "Light, Biological",
+            //	"Rank" : "Predator",
+            //	"MovementSpeed" : "2",
+            //	"AttackPower" : "5",
+            //	"AttackRange" : "1",
+            //	"AttackRate" : "1"
+            //}
 
-            Zergling zergling = new Zergling();
-            Console.WriteLine(zergling.ObjectName);
-            Console.WriteLine(zergling.HitPointsRegenerateRate);
-            Console.WriteLine(zergling.AttackPower);
-            Console.WriteLine(zergling.AttackRange);
-            Console.WriteLine(zergling.AttackRate);
-            Console.ReadKey();
+            unitController.Get(1);
+
+            //unitController.Post(unit);
+
+            //unitController.Put(1, unit);
+
+            unitController.Delete(2);
         }
     }
 }

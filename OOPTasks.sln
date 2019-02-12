@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarCraft", "StarCraft\StarCraft.csproj", "{4BE882FA-670B-4604-A4E9-D0D752E00B72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarCraft.Demo", "StarCraft\StarCraft.Demo.csproj", "{4BE882FA-670B-4604-A4E9-D0D752E00B72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarCraft.Contracts", "StarCraft.Contracts\StarCraft.Contracts.csproj", "{35671EF1-F0D3-4F4F-8421-77BD2B691D83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarCraft.Tests", "StarCraft.Tests\StarCraft.Tests.csproj", "{B4287EC4-3514-4316-B975-E125DF6376ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarCraft.API", "StarCraft.API\StarCraft.API.csproj", "{C6BCF8AC-1A8F-4B82-9A53-07F3576CFD5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +21,23 @@ Global
 		{4BE882FA-670B-4604-A4E9-D0D752E00B72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BE882FA-670B-4604-A4E9-D0D752E00B72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BE882FA-670B-4604-A4E9-D0D752E00B72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35671EF1-F0D3-4F4F-8421-77BD2B691D83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35671EF1-F0D3-4F4F-8421-77BD2B691D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35671EF1-F0D3-4F4F-8421-77BD2B691D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35671EF1-F0D3-4F4F-8421-77BD2B691D83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4287EC4-3514-4316-B975-E125DF6376ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4287EC4-3514-4316-B975-E125DF6376ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4287EC4-3514-4316-B975-E125DF6376ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4287EC4-3514-4316-B975-E125DF6376ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6BCF8AC-1A8F-4B82-9A53-07F3576CFD5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6BCF8AC-1A8F-4B82-9A53-07F3576CFD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6BCF8AC-1A8F-4B82-9A53-07F3576CFD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6BCF8AC-1A8F-4B82-9A53-07F3576CFD5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50F97C5A-5C69-4C14-8485-C7E8CC1F7B1C}
 	EndGlobalSection
 EndGlobal
